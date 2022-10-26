@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$darkest: #00122d;
+$dark: #240537;
+$medium: #003566;
+$hl-dark: #ffae00;
+$hl-light: #ffd60a;
+$font: #edf2f4;
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: $font;
+    text-shadow: 8px 8px 10px #0000008c;
+    overflow-x: hidden;
+    text-decoration: none;
+    scrollbar-width: auto;
+    scrollbar-color: $hl-light $hl-dark;
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: $hl-dark;
+  }
+::-webkit-scrollbar-thumb {
+    background-color: $hl-light;
+    border-radius: 7px;
+    border: 2px solid $hl-light;
+  }
+}
+body
+{
+  overflow-y: hidden;
+}
+#low-polly-bg
+{	
+	position:fixed;
+	background: cover;
+  background: radial-gradient( $darkest 10%, $dark 90%);
+  width: 100%;
+  height: 100vh;
+	margin: 0;
+  padding: 0;
+  z-index: -2;
+  overflow-y: hidden;
+}
+@media only all and (orientation: portrait) 
+{    
+  *
+  {
+    font-size: 90%;
+  }
+}

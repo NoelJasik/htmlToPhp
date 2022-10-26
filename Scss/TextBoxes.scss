@@ -1,0 +1,43 @@
+$darkest: #000814;
+$dark: #001d3d;
+$medium: #003566;
+$hl-dark: #ffae00;
+$hl-light: #ffd60a;
+$font: #edf2f4;
+
+.title-header
+{
+    text-align: center;
+    width: 100%;
+    min-height: 2em;
+    line-height: 2em;
+    font-size: 5em;
+    text-shadow: $font;
+    animation: glow 2s ease-in-out;
+    animation-iteration-count: infinite;
+}
+@media only all and (orientation: portrait) 
+{    
+    .title-header
+    {
+        font-size: 2.5em;
+        padding: 0.25em;
+    }
+  
+}
+
+@keyframes glow
+{
+    0%
+    {
+        text-shadow: 0px 0px 7px;
+    }
+    50%
+    {
+        text-shadow: 0px 0px 12px;
+    }
+    100%
+    {
+        text-shadow: 0px 0px 7px;
+    }
+}

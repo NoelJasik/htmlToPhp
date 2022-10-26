@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noel-Dev</title>
+    <meta name="title" content="Noel-Dev">
+<meta name="description" content="Looking for a programmer?">
+<meta name="keywords" content="Game Developer, Programmer, Web Developer, Game Design, Php, Dev, Js, C#, Solidity, Blockchain, Smart Contract, Freelancer">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<meta name="author" content="Noel Jasik">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="Scss/Main.css">
+    <link rel="stylesheet" href="Scss/TextBoxes.css">
+    <link rel="stylesheet" href="Scss/FlexBoxes.css">
+    <link rel="stylesheet" href="Scss/Buttons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body>
+
+    <div id="low-polly-bg"></div>
+    <div class="full-page-box">
+        <h1 id="main-text" class="title-header">Noel Dev</h1>
+    </div>    
+    <div class="sidebar">
+        <a href="https://twitter.com/NoelJasik1" target="_blank" class="icon-holder"><i class="fa-brands fa-twitter icon"></i></a>
+        <a href="https://www.youtube.com/channel/UCxRSLXsK96XijKcgmlCvEOA" target="_blank" class="icon-holder"><i class="fa-brands fa-youtube icon"></i></a>
+        <a href="https://noeloskar.itch.io/" target="_blank" class="icon-holder"><i class="fa-brands fa-itch-io icon"></i></a>
+        <a href="https://github.com/NoelJasik" target="_blank" class="icon-holder"><i class="fa-brands fa-github icon"></i></a>
+        <a href="https://www.linkedin.com/in/noel-jasik-04b2b2246/" target="_blank" class="icon-holder"><i class="fa-brands fa-linkedin icon"></i></a>
+        
+    </div>
+    <div class="full-page-box">
+        
+        <h1 class="title-header">About</h1>
+        <div class="text-box">
+            <div class="overlay">
+                <p>
+                    Hey! I am Noel, a <b>programmer</b> from <b>Poland</b>. I mainly created <b>video games</b> aswell as other things and have been doing so for quite a while, <b>4 years</b> to be exact.
+                </p>
+                <p>
+                    Over the years, I learned several programming languages which are: 
+                    </p>
+                <div class="side-by-side">
+                    <div class="programming-language-icon">
+                        <i class="devicon-csharp-plain not-awesome" style="color: #684D95;"></i>
+                        <p style="color: #684D95;">C Sharp</p>
+                    </div>
+                    <div class="programming-language-icon">
+                        <i class="devicon-javascript-plain not-awesome" style="color: #f7df1e;"></i>
+                        <p style="color: #f7df1e;">JavaScript</p>
+                    </div>
+                    <div class="programming-language-icon">
+                        <i class="devicon-typescript-plain not-awesome" style="color: #007acc;"></i>
+                        <p style="color: #007acc;">TypeScript</p>
+                    </div>
+                    <div class="programming-language-icon">
+                        <i class="fa-brands fa-php fa-5x" style="color: #474A8A;"></i>
+                        <p style="color: #474A8A;">PHP</p>
+                    </div>
+                    <div class="programming-language-icon">
+                        <i class="devicon-mysql-plain not-awesome" style="color: #00758F;"></i>
+                        <p style="color: #00758F;">MySQL</p>
+                    </div>
+                    <div class="programming-language-icon">
+                        <i class="devicon-solidity-plain not-awesome" style="color: #3c3c3d;"></i>
+                        <p style="color: #3c3c3d;">Solidity</p>
+                    </div>
+                </div>
+    
+                <p>I also have experience with following technologies:</p>
+                <div class="side-by-side">
+                    <div class="programming-language-icon">
+                        <i class="devicon-unity-original not-awesome" style="color: #ffffff;"></i>
+                        <p style="color: #ffffff; padding-left: 0.5em;">Unity</p>
+                    </div>
+                    <div class="programming-language-icon">
+                        <i class="fa-brands fa-html5 fa-5x" style="color: #e34c26;"></i>
+                        <p style="color: #e34c26;">HTML</p>
+                    </div>
+                    <div class="programming-language-icon">
+                        <i class="fa-brands fa-css3-alt fa-5x" style="color: #264de4;"></i>
+                        <p style="color: #264de4;">CSS</p>
+                    </div>
+                    <div class="programming-language-icon">
+                        <i class="fa-brands fa-sass fa-5x" style="color: #c69;"></i>
+                        <p style="color: #c69;">SASS</p>
+                    </div>
+                    <div class="programming-language-icon">
+                        <i class="fa-brands fa-react fa-5x" style="color: #61DBFB;"></i>
+                        <p style="color: #61DBFB;">React</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    <div class="full-page-box" style="justify-content: flex-start;">
+        <h1 class="title-header" style="margin-top: 10vh">Game-Dev</h1>
+        <div class="capsule">
+        {% for item in data %}
+            <a href="{{ item.gameLink }}" target="_blank" class="game-window">
+                <div class="overlay">
+                    <div class="game-icon-holder">
+                        <img src="{{ item.imageLink }}" alt="Video Game">
+                    </div>
+                    <div class="name-section">
+                        <p class="project-name">{{ item.gameName }}</p>
+                        <p class="project-day">{{ item.gameYear }}</p>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+        </div>
+        <button class="show-more" id="btn-show">Show More</button>
+    </div>  
+    <div class="full-page-box" style="justify-content: flex-start;">
+        <h1 class="title-header" style="margin-top: 10vh">Web-Dev</h1>
+        <div class="capsule">
+            <a href="https://instajam.epizy.com/" target="_blank" class="game-window">
+                <div class="overlay">
+                    <div class="game-icon-holder">
+                        <img src="Img/Websites/instajamThumbnail.png" alt="Video Game">
+                    </div>
+                    <div class="name-section">
+                        <p class="project-name">Instajam.epizy.com</p>
+                        <p class="project-day">2022</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://noeldev.xyz" target="_blank" class="game-window">
+                <div class="overlay">
+                    <div class="game-icon-holder">
+                        <img src="Img/Websites/NoelDev.png" alt="Video Game">
+                    </div>
+                    <div class="name-section">
+                        <p class="project-name">NoelDev.xyz</p>
+                        <p class="project-day">2022</p>
+                    </div>
+                </div>
+            </a>
+            
+        </div>  
+
+    </div>  
+    <div class="full-page-box">
+        <h1 class="title-header" id="hire-text">Contact</h1>
+        <div class="text-box">
+            <div class="overlay">
+                <p>
+                    Need something coded? A <b>website</b>, <b>app</b> or a <b>video game</b>? Or maybe you just want to reach out to me?
+                </p>
+                <p>
+                    If that's the case, please feel free to reach out!
+                </p>
+                <div class="side-by-side">
+                    <div class="programming-language-icon" style="padding-left: 3em; padding-right: 3em;">
+                        <i class="fa-brands fa-discord fa-5x" style="color: #7289da;"></i>
+                        <p style="color: #7289da;">NoelJasik#8768</p>
+                    </div>
+                    <a href="mailto:noeloskar99@gmail.com" style="overflow: hidden;">
+                        <div class="programming-language-icon" style="padding-left: 3em; padding-right: 3em;">
+                            <i class="fa-solid fa-envelope fa-5x" style="color: #79fbff;"></i>
+                            <p style="color: #79fbff">noeloskar99@gmail.com</p>
+                        </div>
+                    </a>
+                </div>
+        </div>
+    <script src="Js/Background.js"></script>
+    <script src="Js/Text.js"></script>
+    <script src="Js/CapsuleControler.js"></script>
+    <script src="https://kit.fontawesome.com/1a466070cf.js" crossorigin="anonymous"></script>
+</body>
+</html>

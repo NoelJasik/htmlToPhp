@@ -1,0 +1,268 @@
+$darkest: #000814;
+$dark: #001d3d;
+$medium: #003566;
+$hl-dark: #ffae00;
+$hl-light: #ffd60a;
+$font: #edf2f4;
+
+.icon-holder {
+    padding: 0.5em;
+    .icon:hover {
+        transition: 0.3s;
+        color: $hl-light;
+        transform: scale(1.2);
+        text-shadow: $hl-light;
+        animation: glow 2s ease-in-out;
+        animation-iteration-count: infinite;
+    }
+    .icon {
+        transition: 0.1s;
+        color: $font;
+        font-size: 2em;
+        text-shadow: $font;
+        animation: glow 2s ease-in-out;
+        animation-iteration-count: infinite;
+        padding: 0.5em;
+    }
+}
+@keyframes glow {
+    0% {
+        text-shadow: 0px 0px 7px;
+    }
+    50% {
+        text-shadow: 0px 0px 12px;
+    }
+    100% {
+        text-shadow: 0px 0px 7px;
+    }
+}
+
+.show-more
+{
+   background-color: #00000000;
+   font-size: 2.5em;
+   transition: 0.1s;
+   color: $font;
+   font-size: 2em;
+   text-shadow: $font;
+   animation: glow 2s;
+   animation-iteration-count: infinite;
+   padding: 0.5em;
+   border: none;
+   cursor: pointer;
+}
+.show-more:hover
+{
+    transition: 0.3s;
+    color: $hl-light;
+    transform: scale(1.2);
+    text-shadow: $hl-light;
+    animation: glow 2s;
+    animation-iteration-count: infinite;
+}
+.hidden-item
+{
+    pointer-events: none;
+    transform: scale(1);
+    opacity: 0;
+    position: absolute;
+}
+
+
+.game-window:hover {
+    transition: 0.5s;
+    border-color: $hl-light;
+    transform: scale(1.1) !important;
+    box-shadow: 0px 0px 20px 2px $hl-light;
+    .game-icon-holder {
+        transition: 0.5s;
+        border-color: $hl-light;
+    }
+    .project-name {
+        transition: 0.5s;
+        color: $hl-dark;
+    }
+    .project-day {
+        transition: 0.5s;
+        color: $hl-light;
+    }
+    .overlay:before {
+        transition: 0.5s;
+        background: rgba(255, 255, 255, 0.116) no-repeat fixed 0 0 / cover;
+    }
+}
+.game-window {
+    transition: 0.25s;
+    text-align: center;
+    margin: 3em;
+    border-width: 0.2em;
+    border-style: solid;
+    border-color: $font;
+    border-radius: 0.5em;
+    border-collapse: collapse;
+    .overlay:before {
+        transition: 0.25s;
+        background: rgba(255, 255, 255, 0.062) no-repeat fixed 0 0 / cover;
+    }
+    .overlay {
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        color: white;
+        font-family: "Lato";
+        position: relative;
+        text-align: center;
+        z-index: 0;
+        &:before {
+            content: "";
+            filter: blur(20px);
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+        }
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .game-icon-holder {
+        display: flex;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        width: 18.9em;
+        height: 15em;
+        border-width: 0.2em;
+        border-style: solid;
+        border-radius: 0em;
+        border-color: $font;
+        margin: -0.2em -0.2em -0.2em -0.2em;
+        transition: 0.25s;
+    }
+    .name-section {
+        overflow: hidden;
+        transition: 0.25s;
+        border-collapse: collapse;
+        height: 6em;
+        padding: 1em;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        .project-name {
+            font-size: 1.25em;
+            padding: 0.5em;
+            font-weight: bold;
+            transition: 0.25s;
+        }
+        .project-date {
+            padding: 0.25em;
+            font-size: 2em;
+            transition: 0.25s;
+        }
+    }
+}
+@keyframes breath {
+    0% {
+        text-shadow: 0px 0px 7px;
+    }
+    50% {
+        text-shadow: 0px 0px 12px;
+    }
+    100% {
+        text-shadow: 0px 0px 7px;
+    }
+}
+
+.programming-language-icon {
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    transition: ease-in-out 0.15s;
+    padding: 0.2em;
+    margin: 0.1em;
+    i {
+        padding: 0.1em;
+        margin: 0;
+        text-shadow: 0px 0px 7px;
+    }
+    p {
+        font-size: 1.3em;
+        opacity: 0;
+        transition: ease-in-out 0.15s;
+        padding: 0.5em;
+        margin-top: -0.5em;
+        font-weight: bold;
+        text-shadow: 0px 0px 7px;
+    }
+    .date {
+        font-size: 1em;
+        opacity: 0;
+        transition: ease-in-out 0.15s;
+        text-shadow: 0px 0px 20px;
+    }
+    .role {
+        font-size: 1.1em;
+        opacity: 0;
+        transition: ease-in-out 0.15s;
+        padding: 0;
+        margin: 0.1em;
+        font-weight: bold;
+    }
+    .not-awesome {
+        font-size:5em;
+    }
+
+    .not-icon {
+        filter: drop-shadow(0px 0px 10px);
+        transition: ease-in-out 0.15s;
+        width: 10em;
+    }
+}
+.programming-language-icon:hover {
+    transform: scale(1.2);
+    transition: ease-in-out 0.25s;
+    i {
+        text-shadow: 0px 0px 12px;
+    }
+    p {
+        font-size: 1.3em;
+        opacity: 1;
+        transition: ease-in-out 0.25s;
+        text-shadow: 0px 0px 12px;
+    }
+    .not-icon {
+        transition: ease-in-out 0.25s;
+        filter: drop-shadow(0px 0px 12px);
+    }
+    .role {
+        font-size: 1.1em;
+        opacity: 0.5;
+        transition: ease-in-out 0.25s;
+        text-shadow: 0px 0px 12px;
+    }
+    .date {
+        font-size: 1em;
+        opacity: 1;
+        filter: saturate(0.2);
+        transition: ease-in-out 0.25s;
+        text-shadow: 0px 0px 12px;
+    }
+}
+
