@@ -1,0 +1,385 @@
+.icon-holder {
+  padding: 0.5em;
+}
+
+.icon-holder .icon:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #ffd60a;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  text-shadow: #ffd60a;
+  -webkit-animation: glow 2s ease-in-out;
+          animation: glow 2s ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.icon-holder .icon {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  color: #edf2f4;
+  font-size: 2em;
+  text-shadow: #edf2f4;
+  -webkit-animation: glow 2s ease-in-out;
+          animation: glow 2s ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  padding: 0.5em;
+}
+
+@-webkit-keyframes glow {
+  0% {
+    text-shadow: 0px 0px 7px;
+  }
+  50% {
+    text-shadow: 0px 0px 12px;
+  }
+  100% {
+    text-shadow: 0px 0px 7px;
+  }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0px 0px 7px;
+  }
+  50% {
+    text-shadow: 0px 0px 12px;
+  }
+  100% {
+    text-shadow: 0px 0px 7px;
+  }
+}
+
+.show-more {
+  background-color: #00000000;
+  font-size: 2.5em;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  color: #edf2f4;
+  font-size: 2em;
+  text-shadow: #edf2f4;
+  -webkit-animation: glow 2s;
+          animation: glow 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  padding: 0.5em;
+  border: none;
+  cursor: pointer;
+}
+
+.show-more:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #ffd60a;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  text-shadow: #ffd60a;
+  -webkit-animation: glow 2s;
+          animation: glow 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.hidden-item {
+  pointer-events: none;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 0;
+  position: absolute;
+}
+
+.game-window:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-color: #ffd60a;
+  -webkit-transform: scale(1.1) !important;
+          transform: scale(1.1) !important;
+  -webkit-box-shadow: 0px 0px 20px 2px #ffd60a;
+          box-shadow: 0px 0px 20px 2px #ffd60a;
+}
+
+.game-window:hover .game-icon-holder {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-color: #ffd60a;
+}
+
+.game-window:hover .project-name {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #ffae00;
+}
+
+.game-window:hover .project-day {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #ffd60a;
+}
+
+.game-window:hover .overlay:before {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.116) no-repeat fixed 0 0/cover;
+}
+
+.game-window {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  text-align: center;
+  margin: 3em;
+  border-width: 0.2em;
+  border-style: solid;
+  border-color: #edf2f4;
+  border-radius: 0.5em;
+  border-collapse: collapse;
+}
+
+.game-window .overlay:before {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  background: rgba(255, 255, 255, 0.062) no-repeat fixed 0 0/cover;
+}
+
+.game-window .overlay {
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  font-family: "Lato";
+  position: relative;
+  text-align: center;
+  z-index: 0;
+}
+
+.game-window .overlay:before {
+  content: "";
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.game-window img {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.game-window .game-icon-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  width: 18.9em;
+  height: 15em;
+  border-width: 0.2em;
+  border-style: solid;
+  border-radius: 0em;
+  border-color: #edf2f4;
+  margin: -0.2em -0.2em -0.2em -0.2em;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.game-window .name-section {
+  overflow: hidden;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  border-collapse: collapse;
+  height: 6em;
+  padding: 1em;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+
+.game-window .name-section .project-name {
+  font-size: 1.25em;
+  padding: 0.5em;
+  font-weight: bold;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.game-window .name-section .project-date {
+  padding: 0.25em;
+  font-size: 2em;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+@-webkit-keyframes breath {
+  0% {
+    text-shadow: 0px 0px 7px;
+  }
+  50% {
+    text-shadow: 0px 0px 12px;
+  }
+  100% {
+    text-shadow: 0px 0px 7px;
+  }
+}
+
+@keyframes breath {
+  0% {
+    text-shadow: 0px 0px 7px;
+  }
+  50% {
+    text-shadow: 0px 0px 12px;
+  }
+  100% {
+    text-shadow: 0px 0px 7px;
+  }
+}
+
+.programming-language-icon {
+  color: white;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-transition: ease-in-out 0.15s;
+  transition: ease-in-out 0.15s;
+  padding: 0.2em;
+  margin: 0.1em;
+}
+
+.programming-language-icon i {
+  padding: 0.1em;
+  margin: 0;
+  text-shadow: 0px 0px 7px;
+}
+
+.programming-language-icon p {
+  font-size: 1.3em;
+  opacity: 0;
+  -webkit-transition: ease-in-out 0.15s;
+  transition: ease-in-out 0.15s;
+  padding: 0.5em;
+  margin-top: -0.5em;
+  font-weight: bold;
+  text-shadow: 0px 0px 7px;
+}
+
+.programming-language-icon .date {
+  font-size: 1em;
+  opacity: 0;
+  -webkit-transition: ease-in-out 0.15s;
+  transition: ease-in-out 0.15s;
+  text-shadow: 0px 0px 20px;
+}
+
+.programming-language-icon .role {
+  font-size: 1.1em;
+  opacity: 0;
+  -webkit-transition: ease-in-out 0.15s;
+  transition: ease-in-out 0.15s;
+  padding: 0;
+  margin: 0.1em;
+  font-weight: bold;
+}
+
+.programming-language-icon .not-awesome {
+  font-size: 5em;
+}
+
+.programming-language-icon .not-icon {
+  -webkit-filter: drop-shadow(0px 0px 10px);
+          filter: drop-shadow(0px 0px 10px);
+  -webkit-transition: ease-in-out 0.15s;
+  transition: ease-in-out 0.15s;
+  width: 10em;
+}
+
+.programming-language-icon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: ease-in-out 0.25s;
+  transition: ease-in-out 0.25s;
+}
+
+.programming-language-icon:hover i {
+  text-shadow: 0px 0px 12px;
+}
+
+.programming-language-icon:hover p {
+  font-size: 1.3em;
+  opacity: 1;
+  -webkit-transition: ease-in-out 0.25s;
+  transition: ease-in-out 0.25s;
+  text-shadow: 0px 0px 12px;
+}
+
+.programming-language-icon:hover .not-icon {
+  -webkit-transition: ease-in-out 0.25s;
+  transition: ease-in-out 0.25s;
+  -webkit-filter: drop-shadow(0px 0px 12px);
+          filter: drop-shadow(0px 0px 12px);
+}
+
+.programming-language-icon:hover .role {
+  font-size: 1.1em;
+  opacity: 0.5;
+  -webkit-transition: ease-in-out 0.25s;
+  transition: ease-in-out 0.25s;
+  text-shadow: 0px 0px 12px;
+}
+
+.programming-language-icon:hover .date {
+  font-size: 1em;
+  opacity: 1;
+  -webkit-filter: saturate(0.2);
+          filter: saturate(0.2);
+  -webkit-transition: ease-in-out 0.25s;
+  transition: ease-in-out 0.25s;
+  text-shadow: 0px 0px 12px;
+}
+/*# sourceMappingURL=Buttons.css.map */

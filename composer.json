@@ -1,0 +1,13 @@
+{
+    "name": "noel/portfolio",
+    "authors": [
+        {
+            "name": "NoelJasik",
+            "email": "Noeloskar99@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "3.0",
+        "catfan/medoo": "^2.1"
+    }
+}

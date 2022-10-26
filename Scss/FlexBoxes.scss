@@ -1,0 +1,100 @@
+$darkest: #000814;
+$dark: #001d3d;
+$medium: #003566;
+$hl-dark: #ffae00;
+$hl-light: #ffd60a;
+$font: #edf2f4;
+
+.full-page-box
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+width: 100%;
+min-height: 100vh;
+}
+.main-page-box
+{
+    display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: flex-start;
+align-items: center;
+align-content: flex-start;
+width: 100%;
+min-height: 100vh;
+}
+.sidebar
+{
+    position: absolute;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-end;
+    width: 100%;
+    height: 100vh;
+}
+
+.capsule
+{
+    display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: flex-start;
+align-content: center;
+transition: height 1s ease-out;
+}
+
+.text-box
+{
+  p
+  {
+     padding: 0.25em;
+     margin: 0.1em;
+     max-width: 32em;
+     line-height: 1.5em;
+     font-size: 1.8em;
+  }
+  .overlay:before {
+    transition: 0.25s;
+    background: rgba(255, 255, 255, 0.062) no-repeat fixed 0 0 / cover;
+}
+.overlay {
+    padding: 2.5em;
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    font-family: "Lato";
+    position: relative;
+    text-align: center;
+    border-radius: 1em;
+    z-index: 0;
+}
+}
+.side-by-side
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-width: 100%;
+    margin-bottom: -0.5em;
+    padding-top: 1em;
+    overflow: hidden;
+}
